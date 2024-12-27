@@ -1,8 +1,10 @@
-const express = require('express');
+import express from 'express';
+
 const router = express.Router();
-const exerciseController = require('../controllers/exerciseController');
 
-router.get('/', exerciseController.getExercises);
-router.get('/:id', exerciseController.getExerciseById);
+// Defina suas rotas aqui
+router.get('/', (req, res) => {
+  res.send('Exercise routes');
+});
 
-module.exports = router; 
+export default router; 
