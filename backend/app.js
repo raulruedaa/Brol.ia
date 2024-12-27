@@ -1,7 +1,7 @@
 import express from 'express';
-const mongoose = require('mongoose');
-const exerciseRoutes = require('./routes/exerciseRoutes');
-const quizRoutes = require('./routes/quizRoutes');
+import mongoose from 'mongoose';
+import exerciseRoutes from './routes/exerciseRoutes.js';
+import quizRoutes from './routes/quizRoutes.js';
 
 const app = express();
 
