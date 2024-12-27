@@ -18,7 +18,7 @@ export function SubjectCard({ subject }: SubjectCardProps) {
       <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-4">
         <Icon className="w-8 h-8 text-blue-600" />
       </div>
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">{subject.name}</h3>
+      <span className="text-lg font-semibold">{subject.name}</span>
       <p className="text-gray-600 text-sm">{subject.description}</p>
     </button>
   );
