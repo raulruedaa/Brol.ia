@@ -20,6 +20,9 @@ export function SubjectCard({ subject }: SubjectCardProps) {
       </div>
       <span className="text-lg font-semibold">{subject.name}</span>
       <p className="text-gray-600 text-sm">{subject.description}</p>
+      {subject.name === 'Physics' && (
+        <p className="text-blue-500 text-sm mt-2">Explore conceitos fundamentais de Física!</p>
+      )}
     </button>
   );
 }
